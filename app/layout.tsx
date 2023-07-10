@@ -1,4 +1,3 @@
-"use client";
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import Footer from "@/components/Footer";
@@ -18,14 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Provider>
-        <IsMobileThemeProvider>
-          <body className="relative box-border overflow-x-hidden h-full flex flex-col min-h-screen">
+        <body className="relative box-border overflow-x-hidden h-full flex flex-col min-h-screen">
+          <IsMobileThemeProvider>
             <NavBar />
             <main>{children}</main>
-
             <Footer />
-          </body>
-        </IsMobileThemeProvider>
+          </IsMobileThemeProvider>
+        </body>
       </Provider>
     </html>
   );
