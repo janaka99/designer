@@ -14,10 +14,18 @@ const Cards = () => {
 
       if (res.ok) {
         console.log(newRes);
+        if (
+          newRes.length <= 0 ||
+          !newRes.length ||
+          newRes === undefined ||
+          newRes === null
+        ) {
+          getProjects();
+        }
         setprojects(newRes);
       } else {
-        console.log("error raised");
         getProjects();
+        console.log("error raised");
       }
     } catch (error) {}
   };
