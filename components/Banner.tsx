@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="max-w-[1280px] w-[90%] sm:h-[calc(100vh-80px)] items-center justify-center mx-auto py-12 text-center flex ">
       <div className="flex flex-col gap-12 flex-[2]">
-        <div className="z-[111]">
+        <div className="">
           <div className="">Share - Inspire - Create</div>
           <div className="text-center  text-6xl sm:text-9xl font-bold ">
             Unleash Your <br /> Creativity
