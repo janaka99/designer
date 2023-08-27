@@ -4,6 +4,7 @@ import SkelatonCard from "./SkelatonCard";
 
 const Cards = () => {
   const [projects, setprojects] = useState([]);
+  const [refresh, setRefresh] = useState(false);
 
   const getProjects = async () => {
     try {
@@ -20,14 +21,17 @@ const Cards = () => {
           newRes === undefined ||
           newRes === null
         ) {
-          getProjects();
+          setRefresh(true);
         }
         setprojects(newRes);
       } else {
-        getProjects();
+        setRefresh(true);
+
         console.log("error raised");
       }
-    } catch (error) {}
+    } catch (error) {
+      setRefresh(true);
+    }
   };
 
   useEffect(() => {
