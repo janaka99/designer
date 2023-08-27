@@ -33,7 +33,7 @@ const page = (props: any) => {
   }
   if (isLoading) return <Loading />;
   return (
-    <div className="max-w-[1580px] w-[95%] mx-auto py-10 flex flex-col gap-10">
+    <div className="max-w-[1280px] w-[90%] mx-auto py-10 flex flex-col gap-10">
       <div className="text-center text-3xl text-bold">{project.title}</div>
       <div className="flex justify-center">
         <img src={`${project.imageUrl}`} alt="" className="" />

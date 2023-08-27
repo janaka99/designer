@@ -131,7 +131,7 @@ const NewPost = (props: any) => {
   if (isLoading) return <Loading />;
 
   return (
-    <div className="py-7 max-w-[1544px] w-[95%] mx-auto flex flex-col gap-10">
+    <div className="py-7 max-w-[1280px] w-[90%] mx-auto flex flex-col gap-10">
       <h1 className="text-4xl font-bold">Create a new Project</h1>
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-5">

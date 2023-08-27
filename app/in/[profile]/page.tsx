@@ -43,7 +43,7 @@ const page = (props: any) => {
     return <Loading />;
   }
   return (
-    <div className="py-10 max-w-[1580px] w-[95%] mx-auto flex flex-col justify-center items-center gap-10">
+    <div className="py-10 max-w-[1280px] w-[90%] mx-auto flex flex-col justify-center items-center gap-10">
       <div className="flex flex-col justify-center items-center gap-5">
         <img
           className="w-24 h-24 object-cover rounded-[50%]"
