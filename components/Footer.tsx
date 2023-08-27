@@ -10,12 +10,12 @@ const Footer = () => {
           Janaka
         </Link>
       </div>
-      <div className=" text-center mx-auto pb-5 md:pb-0 md:py-10  font-bold text-[#808080] text-sm uppercase tracking-[2px]">
+      {/* <div className=" text-center mx-auto pb-5 md:pb-0 md:py-10  font-bold text-[#808080] text-sm uppercase tracking-[2px]">
         Design Inspired by &nbsp;
         <Link className="underline" href="https://dribbble.com/">
           Dribbble
         </Link>
-      </div>
+      </div> */}
     </footer>
   );
 };
