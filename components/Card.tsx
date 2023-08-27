@@ -25,8 +25,8 @@ const Card = ({ project }: any) => {
             <img
               className="object-cover rounded-[50%] w-[35px] h-[35px]"
               src={`${project.creator.image}`}
-              width={60}
-              height={60}
+              width={300}
+              height={300}
               alt="profile"
             />
           </a>

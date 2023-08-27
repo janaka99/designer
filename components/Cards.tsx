@@ -54,9 +54,6 @@ const Cards = () => {
           <Card key={project._id} project={project} />
         ))
       )}
-      {projects.map((project: any) => (
-        <Card key={project._id} project={project} />
-      ))}
     </div>
   );
 };
