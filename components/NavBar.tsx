@@ -37,8 +37,8 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="flex p-5 items-center justify-between relative  z-[21] h-24">
-      <div className="flex gap-7 items-center">
+    <nav className="flex  items-center justify-between relative  z-[21] h-24 max-w-[1280px] w-[90%] mx-auto">
+      <div className="flex gap-7 items-center justify-between">
         <button
           className="flex-col gap-2 cursor-pointer w-6 h-6 relative justify-between md:hidden flex"
           onClick={handleNavBar}
@@ -65,30 +65,31 @@ const NavBar = () => {
             }`}
           ></div>
         </button>
-        <Link className="mt-2" href="/">
-          <Image src="/logo.svg" width={115} height={43} alt="Designer" />
+        <Link className={` ${!isMobile && "w-[150px]"}`} href="/">
+          {/* <Image src="/logo.svg" width={115} height={43} alt="Designer" /> */}
+          <div className="text-[#DA4030] font-bold text-3xl">Designer^</div>
         </Link>
-        <ul
-          className={`text-small gap-7 
+      </div>
+      <ul
+        className={`text-md gap-7 
             ${
               isMobile
                 ? "flex transition-all duration-1000 ease-in bg-white absolute w-full left-0 border-t-[1px] flex-col top-full p-7 z-[1111] "
                 : "hidden md:flex transition-all duration-1000 ease-out"
             }
         `}
-        >
-          {NavLinks.map((link) => (
-            <Link
-              className="hover:text-gray-800"
-              href={link.href}
-              key={link.key}
-            >
-              {link.text}
-            </Link>
-          ))}
-        </ul>
-      </div>
-      <div className="flex gap-7 items-center">
+      >
+        {NavLinks.map((link) => (
+          <Link className="hover:text-gray-800" href={link.href} key={link.key}>
+            {link.text}
+          </Link>
+        ))}
+      </ul>
+      <div
+        className={`flex gap-7 items-center ${
+          !isMobile && "w-[150px] justify-end"
+        }`}
+      >
         {status === "loading" ? (
           <> </>
         ) : session?.user ? (
@@ -156,7 +157,7 @@ const NavBar = () => {
                   type="button"
                   key={provider.name}
                   onClick={() => signIn(provider.id)}
-                  className="flex text-white p-3 rounded-lg  bg-black hover:bg-gray-800"
+                  className="btn-2"
                 >
                   Sign In
                 </button>

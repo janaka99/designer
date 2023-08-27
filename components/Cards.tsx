@@ -39,7 +39,7 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="mt-20 lg:mt-0 max-w-[1580px] w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-7 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="mt-20 lg:mt-0 max-w-[1280px] w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-7 lg:grid-cols-3 xl:grid-cols-4">
       {projects.length === 0 ? (
         <>
           <SkelatonCard key={1} />
@@ -54,6 +54,9 @@ const Cards = () => {
           <Card key={project._id} project={project} />
         ))
       )}
+      {projects.map((project: any) => (
+        <Card key={project._id} project={project} />
+      ))}
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import TopBar from "@/components/TopBar";
 import useIsMobileContext from "./context/NavBarContext";
 import Cards from "@/components/Cards";
+import HomePage from "@/components/HomePage";
 
 export default function Home() {
   const { isMobile } = useIsMobileContext();
@@ -12,8 +13,7 @@ export default function Home() {
         isMobile && "h-[calc(100vh-96px)] overflow-hidden "
       }`}
     >
-      <TopBar />
-      <Cards />
+      <HomePage />
     </main>
   );
 }

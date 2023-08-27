@@ -1,8 +1,8 @@
 export const NavLinks = [
-    {href: "/", key: "Find talent" , text: "Find talent"},
-    {href: "/", key: "For designers" , text: "For designers"},
+    {href: "/", key: "Contact" , text: "Contact Us"},
+    {href: "/", key: "About" , text: "About"},
     {href: "/", key: "Inspiration" , text: "Inspiration"},
-    {href: "/", key: "Learn design" , text: "Learn design"},
+    // {href: "/", key: "Learn design" , text: "Learn design"},
 ]
 
 export const TopBarLinks = [
