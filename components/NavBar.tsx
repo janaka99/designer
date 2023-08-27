@@ -134,7 +134,7 @@ const NavBar = () => {
                     </a>
                     <a
                       className="cursor-pointer text-black hover:text-[#111111cf]"
-                      href={`/${session.user.name}?user_id=${session.user.email}`}
+                      href={`/in/${session.user.name}?user_id=${session.user.email}`}
                     >
                       Profile
                     </a>

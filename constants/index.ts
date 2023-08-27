@@ -1,7 +1,7 @@
 export const NavLinks = [
     {href: "/", key: "Contact" , text: "Contact Us"},
     {href: "/", key: "About" , text: "About"},
-    {href: "/", key: "Inspiration" , text: "Inspiration"},
+    // {href: "/", key: "Inspiration" , text: "Inspiration"},
     // {href: "/", key: "Learn design" , text: "Learn design"},
 ]
 
