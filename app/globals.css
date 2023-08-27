@@ -32,12 +32,12 @@ body {
 
 
 .btn-1{
-  @apply border-[1px] border-[#DA4030] text-[#DA4030]  w-fit py-2 px-4 mx-auto font-semibold rounded-lg hover:bg-[#DA4030] hover:text-white transition-all
+  @apply border-[1px] border-[#DA4030] bg-[#DA4030]  text-white w-fit py-2 px-6 mx-auto font-semibold rounded-lg hover:bg-[#fff] hover:text-[#da4030] transition-all
 
 }
 
 .btn-2{
-  @apply border-[1px] border-[#DA4030] text-[#DA4030]  w-fit py-2 px-6 mx-auto font-semibold rounded-lg hover:bg-[#DA4030] hover:text-white transition-all
+  @apply border-[1px] border-[#DA4030] text-[#DA4030]  w-fit py-2 px-6  font-semibold rounded-lg hover:bg-[#DA4030] hover:text-white transition-all
 
 }
 

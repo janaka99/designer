@@ -18,7 +18,7 @@ const Banner = () => {
           Ignite Your Creative Spark, Connect through Designs, and Inspire
           Boundless Imagination
         </div>
-        <button className="btn-2">Craft, Shape, Innovate</button>
+        <button className="btn-1 mx-auto">Craft, Shape, Innovate</button>
       </div>
       {/* <div className="banner-img w-[50%] h-[80%] flex-[1] overflow-hidden"></div> */}
     </div>

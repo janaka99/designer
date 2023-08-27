@@ -38,9 +38,15 @@ const NavBar = () => {
 
   return (
     <nav className="flex  items-center justify-between relative  z-[21] h-24 max-w-[1280px] w-[90%] mx-auto">
-      <div className="flex gap-7 items-center justify-between">
+      <div
+        className={`flex gap-7 items-center ${
+          !isMobile && "flex-[1] justify-between "
+        }`}
+      >
         <button
-          className="flex-col gap-2 cursor-pointer w-6 h-6 relative justify-between md:hidden flex"
+          className={`flex-col gap-2 cursor-pointer w-6 h-6 relative 
+            justify-between
+           md:hidden flex`}
           onClick={handleNavBar}
         >
           <div
@@ -65,17 +71,16 @@ const NavBar = () => {
             }`}
           ></div>
         </button>
-        <Link className={` ${!isMobile && "w-[150px]"}`} href="/">
-          {/* <Image src="/logo.svg" width={115} height={43} alt="Designer" /> */}
+        <Link className={` ${!isMobile && "flex-[1]"}`} href="/">
           <div className="text-[#DA4030] font-bold text-3xl">Designer^</div>
         </Link>
       </div>
       <ul
-        className={`text-md gap-7 
+        className={`text-md gap-7 flex-[1]
             ${
               isMobile
                 ? "flex transition-all duration-1000 ease-in bg-white absolute w-full left-0 border-t-[1px] flex-col top-full p-7 z-[1111] "
-                : "hidden md:flex transition-all duration-1000 ease-out"
+                : "hidden md:flex transition-all duration-1000 ease-out  justify-center"
             }
         `}
       >
@@ -87,17 +92,14 @@ const NavBar = () => {
       </ul>
       <div
         className={`flex gap-7 items-center ${
-          !isMobile && "w-[150px] justify-end"
+          !isMobile && " flex-[1] justify-end"
         }`}
       >
         {status === "loading" ? (
           <> </>
         ) : session?.user ? (
           <>
-            <Link
-              className="hidden lg:flex text-white p-3 rounded-lg  bg-black hover:bg-gray-800 z-[1]"
-              href="/post/new"
-            >
+            <Link className="hidden lg:flex btn-2" href="/post/new">
               Share Work
             </Link>
             <div
